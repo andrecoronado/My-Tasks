@@ -1,0 +1,74 @@
+####### ----> 0. Iniciar o Servidor
+cd server
+npx nodemon server.js
+
+cd /Arquivos/OneDrive/1. Documentos/06. Empresas/8. Portifolio - DEV/mongodb/bin/
+mongod --dbpath=/Projects/MyFirstMERN/server/db/data
+
+cd client
+npm start
+
+####### ----> 1. Iniciar o GIT
+
+echo "# <NAMEPROJECT>" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/andrecoronado/firstMERN.git
+git push -u origin master
+
+####### ----> 2. Iniciar o Servidor
+cd server
+npm init -y
+npm install express body-parser cors mongoose nodemon
+---> criar o arquivo index.js
+node index.js
+npx nodemon server.js
+
+####### ----> 3. Iniciar o BD
+cd /Arquivos/OneDrive/1. Documentos/06. Empresas/8. Portifolio - DEV/mongodb/bin/
+mongod --dbpath=/Projects/MyFirstMERN/server/db/data
+---> criar o db dento do robo 3t
+---> criar o arquivo index.js dentro da pasta server/db/
+---> atualizar o arquivo index do server
+
+####### ----> 4. Criar um schema
+---> Criar a pasta models
+---> Criar o arquivo tarefa-model com a chamada do db
+
+####### ----> 5. Criar routes e controllers
+mkdir routes controllers
+---> criar routes/tarefa-router.js
+---> criar controllers/tarefa-ctrl.js
+---> atualizar o index.js do server
+
+####### ----> 6. Criar Front end com react
+npx create-react-app client
+cd client
+npm start
+---> alterar a porta"scripts": {"start": "PORT=8000 react-scripts start", 
+---> remover App.css index.css App.test.js serviceWorker.js
+npm install styled-components react-table react-router-dom axios bootstrap --save
+cd src
+mkdir api app components pages style
+NUL> api/index.js 
+NUL> components/index.js 
+NUL> pages/index.js 
+NUL> style/index.js
+move App.js app/index.js
+---> alterar o arquivo index.js principal
+NUL> components/NavBar.jsx 
+NUL> components/Logo.jsx 
+NUL> components/Links.jsx
+---> alterar o arquivo index.js componente
+---> alterar o arquivo index.js app
+
+####### ----> 7. Integracao BE e FE
+---> alterar o arquivo api/index.js
+---> alterar o arquivo app/index.js
+cd pages
+NUL> TarefaList.jsx 
+NUL> TarefaInsert.jsx 
+NUL> TarefaUpdate.jsx
+---> alterar os arquivos
+parei aqui

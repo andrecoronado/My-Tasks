@@ -1,0 +1,55 @@
+node_modules
+comandos.txt
+
+# dependencies
+/server/node_modules
+/client/node_modules
+/client/.pnp
+/client.pnp.js
+
+# testing
+/client/coverage
+
+# production
+/client/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+server/db/data/
+server/db/data/_mdb_catalog.wt
+server/db/data/collection-0--872380458860285467.wt
+server/db/data/collection-0-2897860435599912135.wt
+server/db/data/collection-2-2897860435599912135.wt
+server/db/data/collection-4-2897860435599912135.wt
+server/db/data/collection-8-2897860435599912135.wt
+server/db/data/index-1--872380458860285467.wt
+server/db/data/index-1-2897860435599912135.wt
+server/db/data/index-3-2897860435599912135.wt
+server/db/data/index-5-2897860435599912135.wt
+server/db/data/index-6-2897860435599912135.wt
+server/db/data/index-9-2897860435599912135.wt
+server/db/data/mongod.lock
+server/db/data/sizeStorer.wt
+server/db/data/storage.bson
+server/db/data/WiredTiger
+server/db/data/WiredTiger.lock
+server/db/data/WiredTiger.turtle
+server/db/data/WiredTiger.wt
+server/db/data/WiredTigerLAS.wt
+server/db/data/diagnostic.data/metrics.2019-12-18T05-25-11Z-00000
+server/db/data/diagnostic.data/metrics.2019-12-18T15-36-41Z-00000
+server/db/data/diagnostic.data/metrics.2019-12-18T17-16-50Z-00000
+server/db/data/diagnostic.data/metrics.interim
+server/db/data/diagnostic.data/metrics.interim.temp
+server/db/data/journal/WiredTigerLog.0000000003
+server/db/data/journal/WiredTigerPreplog.0000000001
+server/db/data/journal/WiredTigerPreplog.0000000002
+.vscode/settings.json
