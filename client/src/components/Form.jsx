@@ -34,7 +34,7 @@ function Form(props)  {
 
   function submitForm(event) {
     event.preventDefault();
-    if(login.register === true && login.name != ""){
+    if(login.register === true && login.name !== ""){
       const isMatch = bcrypt.compareSync(login.password, login.data.password);
       if(isMatch){
         setLogin(prevLogin => {
@@ -42,11 +42,11 @@ function Form(props)  {
                     ...prevLogin,  
                     token: jwt.sign({ _id: login.email}, 'logininthisapplication', { expiresIn:'1 days' }), 
                     status: true,
-                    message:""
+                    message:"Login is Successful!!"
                 }})
         }
       else{
-        setLogin(prevLogin => {return { ...prevLogin,  message: "Incorrect username or password."}})
+        setLogin(prevLogin => {return { ...prevLogin,  message: "Unsuccessful login! Something is wrong. Please try again. "}})
       }
     }
     else{
@@ -57,12 +57,11 @@ function Form(props)  {
               setLogin(prevLogin => {
                   return { 
                           ...prevLogin,  
-                          token: jwt.sign({ _id: login.email }, 'logininthisapplication', { expiresIn:'1 days' }), 
-                          status: true, 
+                          email:"",
+                          password:"",
                           register:true,
-                          message:""
+                          message:"Registration is successful!!"
                         }})
-              return response;
             }).catch(function (error) {
               console.log([error,insertUser]);
               setLogin(prevLogin => {return { ...prevLogin,  message: "There is something wrong."}})
@@ -77,7 +76,7 @@ function Form(props)  {
       <form className="form">
         <input type="email" placeholder="e-mail" onChange={handleChange} onBlur={handleBlur}  name="email" value={login.email} />
         {!login.register && (<input type="text" placeholder="Username" onChange={handleChange}  name="name" value={login.name} />)}
-        <input type="password" placeholder="Password" onChange={handleChange}  name="password"/>
+        <input type="password" placeholder="Password" onChange={handleChange}  name="password" value={login.password}/>
         {!login.register && (<input type="password" placeholder="Confirm Password" onChange={handleChange}  name="confirmPassword"/>)}
         <button onClick={submitForm}>{login.register ? "Login" : "Register"}</button>
         <h2> {login.message}</h2>
