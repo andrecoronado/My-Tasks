@@ -1,105 +1,266 @@
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin: 0;
     padding: 0;
     font-weight: 300;
 }
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
-    color: white;
-    font-weight: 300;
-    background: #d4d7dd;
-    width: 100%;
-    height: 100%;
-}
-
-.container {
-    margin: 10% auto;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.container h1 {
-    font-size: 40px;
-    font-weight: 200;
-    color: #584b42;
-}
-
-.container h2 {
-    font-size: 36px;
-    font-weight: 400;
-    color: rgba(251, 167, 70);
-    margin-top: 20px;
-}
-
-form {
-    padding: 20px 0;
-    position: relative;
-}
-
-form input {
-    border: 1px solid rgba(251, 167, 70);
-    background-color: rgba(252, 252, 252, 0.6);
-    width: 250px;
-    border-radius: 3px;
-    font-family: "Source Sans Pro", sans-serif;
-    padding: 10px 15px;
-    margin: 0 auto 10px auto;
-    display: block;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 900;
-    color: #584b42;
+  font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
 }
 
+section {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+header {
+  background-color: #fab95b;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-weight: 200;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: #1a3263;
+  z-index: 1;
+}
+
+footer p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #1a3263
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #e5dbcf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f5564e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f5564e;
+}
+
+/* ----- login ------- */
+
+.login{
+  color: white;
+  font-weight: 300;
+  background: #e8e2db;
+}
+
+.login .container {
+  margin: 10% auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.login .container h1 {
+  font-size: 40px;
+  font-weight: 200;
+  color: #584b42;
+}
+
+.login .container h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #fab95b;
+  margin-top: 20px;
+}
 
 ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #584b42;
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 1;
-    /* Firefox */
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #584b42;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+  /* Firefox */
 }
 
 :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #584b42;
-    font-size: 16px;
-    font-weight: 400;
+  /* Internet Explorer 10-11 */
+  color: #584b42;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #584b42;
-    font-size: 16px;
-    font-weight: 400;
+  /* Microsoft Edge */
+  color: #584b42;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+form {
+  padding: 20px 0;
+  position: relative;
+}
+
+form input {
+  border: 1px solid #fab95b;
+  background-color: rgba(252, 252, 252, 0.6);
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: #584b42;
+  font-weight: 300;
 }
 
 form button {
-    appearance: none;
-    outline: 0;
-    background-color: white;
-    border: 0;
-    padding: 10px 15px;
-    color: #584b42;
-    border-radius: 3px;
-    width: 250px;
-    font-size: 18px;
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #584b42;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 18px;
 }
 
 form button:focus,
 form button:hover{
-    background-color: rgba(251, 167, 70) ;
+  background-color: #fab95b;
 }
 
 input:focus,
 input:active {
-    border: 1.1px solid rgba(251, 167, 70) !important;
-    outline: 0;
-    box-shadow: 1px 1px 2px rgba(251, 167, 70,0.7) !important;
-    -webkit-box-shadow: 1px 1px 2px rgba(251, 167, 70,0.7) !important;
+  border: 1.1px solid #fab95b !important;
+  outline: 0;
+  box-shadow: 1px 1px 2px rgba(251, 167, 70,0.7) !important;
+  -webkit-box-shadow: 1px 1px 2px rgba(251, 167, 70,0.7) !important;
 }
 
+/* ----- task ------- */
+
+.task{
+  color: white;
+  font-weight: 300;
+  background: #e8e2db;
+  min-height: 200vh;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+  z-index: 10;
+}
+.note h1 {
+  font-size: 1.2em;
+  margin-bottom: 6px;
+  color: #584b42;
+  font-weight: 600;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #584b42;
+  font-weight: 300;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #fab95b;
+  background: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #fab95b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.MuiFormGroup-row {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon-exit{
+  padding-top: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon-exit:hover,
+.icon-exit:active{
+  background-color: #fab24d;
+  transition: border-bottom 0.2s, color 0.2  ;
+  -webkit-transition: border-bottom 0.2s, color 0.2  ;
+  -moz-transition: border-bottom 0.2s, color 0.2  ;
+  -ms-transition: border-bottom 0.2s, color 0.2  ;
+  -o-transition: border-bottom 0.2s, color 0.2  ;
+}
+
+  
