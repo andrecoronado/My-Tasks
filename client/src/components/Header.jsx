@@ -6,8 +6,8 @@ import apis  from '../api'
 
 function Header(props) {
 
-  async function handleClick() {
-     const logoutAll = await apis.logoutAll()
+  function handleClick() {
+     const logoutAll = apis.logoutAll()
      const logOff = props.setLogOff()
      console.log(logoutAll + ' All ')
      console.log(logOff + ' Off ')
@@ -23,8 +23,8 @@ function Header(props) {
               Personal Tasks
             </h1>
           </Col>
-          <Col xs={2} md={1} className="icon-exit">
-            <PowerSettingsNewIcon  color="secondary" onClick={handleClick} />
+          <Col xs={2} md={1} className="icon-exit" onClick={handleClick} >
+            <PowerSettingsNewIcon  color="secondary"/>
           </Col>
         </Row>
       </Container>
