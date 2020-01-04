@@ -1,5 +1,6 @@
 node_modules
 comandos.txt
+config
 
 # dependencies
 /server/node_modules

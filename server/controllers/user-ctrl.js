@@ -1,8 +1,6 @@
 const User = require('../models/user-model')
 const multer = require('multer')
 const sharp = require('sharp')
-const jwt = require('jsonwebtoken')
-
 
 const upload = multer({
     limits: {
@@ -91,7 +89,6 @@ logoutUser = async (req, res) => {
             return token.token !== req.token
         })
         await req.user.save()
-        res.clearCookie('access_token')
         res.send()
     } catch (e) {
         res.status(500).send()

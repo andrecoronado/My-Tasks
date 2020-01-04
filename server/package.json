@@ -4,17 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "nohup ./node_modules/.bin/env-cmd -f ./config/prod.env node index.js > output.log &",
+    "dev": "env-cmd ./config/dev.env nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "env-cmd": "^10.0.1",
     "express": "^4.17.1",
+    "https": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.4.1",
     "mongoose": "^5.8.1",
