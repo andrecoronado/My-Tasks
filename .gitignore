@@ -11,6 +11,9 @@ config
 # testing
 /client/coverage
 
+/client/public/favicon.png
+/client/public/favicon.ico
+
 # production
 /client/build
 
