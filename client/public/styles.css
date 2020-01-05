@@ -32,18 +32,17 @@ header h1 {
 footer {
   position: fixed;
   text-align: center;
-  bottom: 0;
-  width: 100%;
+  bottom:0;
   padding: 15px;
-  color: #1a3263;
-  z-index: 1;
+  width: 100%;
+  color: #584b42;
 }
 
 footer p {
   font-family: 'Nunito', sans-serif;
   font-size: 14px;
   font-weight: 200;
-  color: #1a3263
+  color: #584b42
 }
 
 ::-webkit-scrollbar {
@@ -73,8 +72,8 @@ footer p {
 }
 
 .login .container {
-  margin: 10% auto;
-  padding: 80px 0;
+  margin: 10% auto 0 auto;
+  padding: 50px 0 0 0;
   text-align: center;
 }
 
@@ -166,7 +165,6 @@ input:active {
   color: white;
   font-weight: 300;
   background: #e8e2db;
-  min-height: 200vh;
 }
 
 .note {
@@ -174,7 +172,7 @@ input:active {
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
-  width: 240px;
+  width: 400px;
   margin: 16px;
   float: left;
   z-index: 10;
@@ -207,9 +205,17 @@ input:active {
   outline: none;
 }
 
+.note-space{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 form.create-note {
   position: relative;
-  width: 480px;
+  width: 400px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;

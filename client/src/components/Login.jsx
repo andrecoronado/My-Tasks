@@ -1,8 +1,9 @@
 import React from "react"
 import apis  from '../api'
+import Footer from "./Footer";
 
 function Login(props)  {
-  const headerName="Personal Tasks"
+  const headerName="My Tasks"
 
   function  handleChange(event) {
     let { name, value } = event.target
@@ -79,6 +80,7 @@ function Login(props)  {
             <h2> {props.login.message}</h2>
           </form>
         </div>
+        <Footer />
       </section>)
 }
 export default Login;

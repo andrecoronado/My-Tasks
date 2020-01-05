@@ -20,7 +20,7 @@ function Header(props) {
           <Col xs={10} md={11}>
             <h1>
               <InsertCommentTwoToneIcon htmlColor={'#f5564e'}/>
-              Personal Tasks
+               My Tasks
             </h1>
           </Col>
           <Col xs={2} md={1} className="icon-exit" onClick={handleClick} >

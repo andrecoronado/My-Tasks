@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./Header";
-import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
 import api from '../api'
@@ -35,6 +34,7 @@ function Tasks(props)  {
           setLogOff={props.setLogOff}
         />
         <CreateArea onAdd={addNote} />
+        <div className = "note-space"> 
           {notes.map((noteItem, index) => {
             return (
                 <Note
@@ -49,7 +49,7 @@ function Tasks(props)  {
                 />
             );
             })}
-        <Footer />
+        </div>
       </section>
     )
 }
