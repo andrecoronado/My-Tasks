@@ -1,8 +1,8 @@
 import React from "react";
-import InsertCommentTwoToneIcon from '@material-ui/icons/InsertCommentTwoTone';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
-import { Container, Row, Col }  from 'react-bootstrap';
+import { Container, Row, Col, OverlayTrigger, Tooltip }  from 'react-bootstrap';
 import apis  from '../api'
+
 
 function Header(props) {
 
@@ -19,13 +19,19 @@ function Header(props) {
         <Row >
           <Col xs={10} md={11}>
             <h1>
-              <InsertCommentTwoToneIcon htmlColor={'#f5564e'}/>
+              <img  src="logo.png" alt="My Tasks"/>
                My Tasks
             </h1>
           </Col>
-          <Col xs={2} md={1} className="icon-exit" onClick={handleClick} >
-            <PowerSettingsNewIcon  color="secondary"/>
-          </Col>
+          <OverlayTrigger
+            key={'bottom'}
+            placement={'bottom'}
+            overlay={<Tooltip id={`tooltip-bottom`}>Logoff</Tooltip>}
+          >
+            <Col xs={2} md={1} className="icon-exit" onClick={handleClick} >
+              <PowerSettingsNewIcon  color="secondary"/>
+            </Col>
+          </OverlayTrigger>
         </Row>
       </Container>
     </header>

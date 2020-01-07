@@ -20,6 +20,51 @@ Extra small devices (portrait phones, less than 576px)*/
         font-size: 18px;
         padding-top: 17px;
     }
+    .login h1{
+        font-size: 36px;
+    }
+    .login h2{
+        font-size: 20px;
+    }
+    .login h3{
+        font-size: 36px;
+    }
+
+    li{
+        font-size: 12px;
+    }
+
+    .login img{
+        text-align: right;
+        height: 80px;
+      }
+
+    footer{
+        position: relative;
+        margin-top: 10%;
+    }
+    .login .page{
+        margin-bottom: 10%;
+    }
+    .login .page-user{
+        margin-top: 10%;
+        border-left: 0px;
+        margin-left: 20px;
+    }
+
+    .login .container-fluid {
+        margin: 15% -15px 25% -15px;
+    }
+
+    .login .page:after {
+        display: block;
+        height: 2px;
+        background-color: #fba746;
+        content: " ";
+        width: 40%;
+        margin-left: 23%;
+        margin-top: 20%;
+    }
 }
 
 
@@ -30,12 +75,71 @@ Extra small devices (portrait phones, less than 576px)*/
     .note {
         width: 75%;
     }
+
+    footer{
+        position: relative;
+        margin-top: 10%;
+    }
+
+    .login h2{
+        font-size: 24px;
+    }
+    
+    li{
+        font-size: 16px;
+    }
+    .login .page{
+        margin-bottom: 10%;
+    }
+    .login .page-user{
+        margin-top: 10%;
+        border-left: 0px;
+        margin-left: 20px;
+    }
+    .login .container-fluid {
+        margin: 15% -15px 15% -15px;
+    }
+    .login .page:after {
+        display: block;
+        height: 2px;
+        background-color: #fba746;
+        content: " ";
+        width: 40%;
+        margin-left: 23%;
+        margin-top: 20%;
+    }
 }
 
 
 /* Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    footer{
+        position: relative;
+        margin-top: 10%;
+    }
+
+    .login .page{
+        margin-bottom: 10%;
+    }
+    .login .page-user{
+        margin-top: 10%;
+        border-left: 0px;
+        margin-left: 20px;
+    }
+    .login .container-fluid {
+        margin: 15% -15px 15% -15px;
+    }
+    .login .page:after {
+        display: block;
+        height: 2px;
+        background-color: #fba746;
+        content: " ";
+        width: 40%;
+        margin-left: 23%;
+        margin-top: 20%;
+    }
+}
 
 
 /* Large devices (desktops, 992px and up)*/
@@ -46,3 +150,10 @@ Extra small devices (portrait phones, less than 576px)*/
 /* Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {}
+
+@media (max-height: 650px) {
+    footer{
+        position: relative;
+        margin-top: 10%;
+    }
+}

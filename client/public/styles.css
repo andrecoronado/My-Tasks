@@ -25,8 +25,13 @@ header {
 }
 
 header h1 {
-  color: #fff;
-  font-weight: 200;
+  color: #f5564e;
+  font-weight: 400;
+}
+
+header img {
+  height: 40px;
+  vertical-align: text-bottom;
 }
 
 footer {
@@ -71,23 +76,75 @@ footer p {
   background: #e8e2db;
 }
 
-.login .container {
-  margin: 10% auto 0 auto;
-  padding: 50px 0 0 0;
+.login .container-fluid {
+  margin: 7% -15px 0 -15px;
+  padding: 30px 0 0 0;
   text-align: center;
 }
 
-.login .container h1 {
+
+.login h1{
+  font-size: 55px;
+  font-weight: 400;
+  color: #f5564e;
+  text-align: left;
+}
+
+.login h2 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #584b42;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.login h3 {
   font-size: 40px;
   font-weight: 200;
   color: #584b42;
 }
 
-.login .container h2 {
-  font-size: 36px;
+.login h4 {
+  font-size: 24px;
   font-weight: 400;
   color: #fab95b;
   margin-top: 20px;
+}
+
+.login .page{
+  margin: 7% 3% 3% 20%;
+}
+
+.login .page-user{
+  margin-top: 10%;
+  border-left: 3px #fab95b solid ;
+}
+
+.login img{
+  text-align: right;
+  height: 120px;
+}
+
+ul{
+  padding-top: 30px;
+  list-style: none;
+  margin-right: 5%;
+}
+
+li{
+  font-weight: 800 !important;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 2.5;
+  text-align: right;
+  color: #f5564e;
+  padding: 5px;
+ 
+}
+li span{
+  background-color: rgb(153,217, 234, 0.9);
+  padding: 8px;
 }
 
 ::placeholder {
@@ -171,7 +228,7 @@ input:active {
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   width: 400px;
   margin: 16px;
   float: left;
@@ -185,11 +242,26 @@ input:active {
 }
 .note p {
   font-size: 1.1em;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
   color: #584b42;
   font-weight: 300;
+  border-bottom: 1px #fab85b52 solid;
+}
+
+.note label{
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+}
+
+.tooltip .tooltip-inner{
+  background-color: #f5564e;
+}
+
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #f5564e !important;
 }
 
 .note button {
